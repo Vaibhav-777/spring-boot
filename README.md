@@ -27,21 +27,18 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
 8. Use the below API's to perform CRUD operations. We can test all these API's using postman
 
-   To list all the records
-   GET API: http://localhost:8080/students/
+   1. To list all the records
+      GET API: http://localhost:8080/students/
 
-   To save the specific record in database
-   POST API: http://localhost:8080/students/
-   Sample Request Body: {
-                          "name": "EMPLOYEE ONE",
-                          "location": "PUNE"
-                        }
+   2. To save the specific record in database
+      POST API: http://localhost:8080/students/
    
-   To update the specific record in database
-   PUT API: http://localhost:8080/students/{student_id}
-   Sample Request Body: {
-                          "location": "MUMBAI"
-                        }
+      ```Sample Request Body: { "name": "ABC", "location": "MUMBAI" }```
+   
+   3. To update the specific record in database
+      PUT API: http://localhost:8080/students/{student_id}
+      
+      ```Sample Request Body: { "location": "MUMBAI" }```
 
-   To remove the specific record from the database
-   DELETE API: http://localhost:8080/students/{student_id}
+   4. To remove the specific record from the database
+      DELETE API: http://localhost:8080/students/{student_id}
