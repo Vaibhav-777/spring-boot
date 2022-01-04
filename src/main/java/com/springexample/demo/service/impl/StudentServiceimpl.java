@@ -60,7 +60,7 @@ public class StudentServiceimpl implements StudentService {
 
 	Student getStudentDetailsById(int studentId) {
 		Optional<Student> student = studentDao.findById(studentId);
-		if (student.isEmpty()) {
+		if (!student.isPresent()) {
 			throw new ResourceNotFoundException("Student is not available with given id:: " + studentId);
 		}
 		return new Student(student.get().getId(), student.get().getName(), student.get().getLocation());
