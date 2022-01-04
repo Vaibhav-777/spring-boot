@@ -32,9 +32,16 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
    To save the specific record in database
    POST API: http://localhost:8080/students/
+   Sample Request Body: {
+                          "name": "EMPLOYEE ONE",
+                          "location": "PUNE"
+                        }
    
    To update the specific record in database
-   POST API: http://localhost:8080/students/{student_id}
+   PUT API: http://localhost:8080/students/{student_id}
+   Sample Request Body: {
+                          "location": "MUMBAI"
+                        }
 
    To remove the specific record from the database
    DELETE API: http://localhost:8080/students/{student_id}
