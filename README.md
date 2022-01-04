@@ -4,6 +4,22 @@
 
 It a is simple example of the Spring boot project. The CRUD operations are implemented using RESTful web service and MySQL database.
 
+**Application type:** Spring boot application
+
+**Platform used:** Ubuntu 16.04.6 LTS
+
+**IDE used:** Spring Tool Suite 4 Version: 4.4.0.RELEASE
+
+**Tools & Framework used:** Java spring boot framework, JDK 1.8
+
+**Spring Dependencies used:**
+
+1.Spring web
+
+2.MySql driver
+
+3.Spring data JPA
+
 **Prerequisites:**
 
 1. MySQL Database
@@ -11,17 +27,27 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
 **Steps to run the project**
 
-1. Clone the repository
+1. Create database or use existing one
+
+2. Create application.properties file and add following lines in it
+
+      `spring.datasource.url=jdbc:mysql://localhost:3306/{database_name}?createDatabaseIfNotExist=true&&useUnicode=true&characterEncoding=utf8`
+
+      `spring.datasource.username={username}`
+
+      `spring.datasource.password={password}`
+
+3. Clone the repository
 
 2. Open terminal in project folder
 
 3. Run mvn clean install 
 
-4. After following step no 3 target folder will be created. Go into that folder you will find {your-app-name}.jar file
+4. After following step no #3 target folder will be created. Go into that folder you will find {your-app-name}.jar file
 
 5. Open the terminal and type following command
 
-6. java -jar {app-name}.jar 
+6. java -jar {app-name}.jar --spring.config.location=classpath:/application.properties,/{created-application.properties-path}/application.properties
 
 7. After follwing all these steps application will be running on this host endpoint http://localhost:8080/
 
