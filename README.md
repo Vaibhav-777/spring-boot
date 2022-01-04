@@ -29,7 +29,7 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
 1. Create database or use existing one
 
-2. Create application.properties file and add following lines in it
+2. Create properties file with .properties file extension and add following lines in it
 
       `spring.datasource.url=jdbc:mysql://localhost:3306/{database_name}?createDatabaseIfNotExist=true&&useUnicode=true&characterEncoding=utf8`
 
@@ -47,7 +47,7 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
 5. Open the terminal and type following command
 
-6. java -jar {app-name}.jar --spring.config.location=classpath:/application.properties,/{created-application.properties-path}/application.properties
+6. java -jar {app-name}.jar --spring.config.location=/{created_properties_file_path}/{file_name}
 
 7. After follwing all these steps application will be running on this host endpoint http://localhost:8080/
 
@@ -59,12 +59,12 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
    2. To save the specific record in database
       POST API: http://localhost:8080/students/
    
-      ```Sample Request Body: { "name": "ABC", "location": "MUMBAI" }```
+      `Sample Request Body: { "name": "ABC", "location": "MUMBAI" }`
    
    3. To update the specific record in database
       PUT API: http://localhost:8080/students/{student_id}
       
-      ```Sample Request Body: { "location": "MUMBAI" }```
+      `Sample Request Body: { "location": "MUMBAI" }`
 
    4. To remove the specific record from the database
       DELETE API: http://localhost:8080/students/{student_id}
