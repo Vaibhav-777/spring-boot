@@ -2,12 +2,12 @@
 
 **Description:**
 
-It a is simple example of the Spring boot project. The CRUD operations are implemented using REST API and MySQL database.
+It a is simple example of the Spring boot project. The CRUD operations are implemented using RESTful web service and MySQL database.
 
 **Prerequisites:**
 
 1. MySQL Database
-2. Postman
+2. Maven 
 
 **Steps to run the project**
 
@@ -23,9 +23,9 @@ It a is simple example of the Spring boot project. The CRUD operations are imple
 
 6. java -jar {app-name}.jar 
 
-7. After follwing all these steps application will be running on http://localhost:8080/
+7. After follwing all these steps application will be running on this host endpoint http://localhost:8080/
 
-8. Use the below API's to perform CRUD operations
+8. Use the below API's to perform CRUD operations. We can test all these API's using postman
 
    To list all the records
    GET API: http://localhost:8080/students/
